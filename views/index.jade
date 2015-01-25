@@ -3,19 +3,10 @@ extends layout
 // Define basic data fields using jade's mixin feature
 // Bind to those fields for dynamic updates
 
-mixin metric(id, title, footer)
-  div(class="panel panel-default", id="#{id}-metric")
-    if title
-      div.panel-heading: h3.panel-title= title
-    div(class="panel-body metric")
-      h1(id="#{id}")= "TBD"
-    if footer
-      div.panel-footer= footer
-
 block styles
 
 block scripts
-  script(src='/socket.io.socket.io.js')
+  script(src='socket.io/socket.io.js')
   script(src='/javascripts/client.socket.io.js')
 
 block content
@@ -23,4 +14,4 @@ block content
     div.page-header: h1 Ping-Pong
     div(class="row")
       div(class="col-lg-3")
-        +metric("ss-message", "Ping-Pong", "Ping-Pong")
+        button(id="ping", class="btn btn-default") Ping

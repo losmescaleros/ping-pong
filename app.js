@@ -21,12 +21,26 @@ var sio = require('socket.io').listen(server);
 
 // Define socket.io behavior
 sio.sockets.on('connection', function(socket){
-  console.log('Web client connected');
-  // Emit successful connection status to the client
-  socket.emit('ss-confirmation', {text: 'Successfully connected'});
+  
+  // Log the disconnect  
   socket.on('disconnect', function(){
     console.log('Web client disconnected');
   });
+
+  // Upon receiving PONG, log it to console
+  socket.on('cs-pong', function(data){
+    console.log(data.text);
+  });
+
+  // Upon receiving PING, respond with a PONG
+  socket.on('cs-ping', function(data){
+    socket.emit('ss-pong', {text: 'PONG'});
+  });
+
+  // Randomly emit PING to client
+  setInterval(function(){
+    socket.emit('ss-ping', {text: 'PING'});
+  }, 1000 * (5 + Math.floor(Math.random() * 5)));
 });
 
 // view engine setup
