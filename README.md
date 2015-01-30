@@ -1,6 +1,7 @@
 Mitchell Neville
 
-[CSC 591 - Ping Pong Lab](http://github.com/losmescaleros/ping-pong)
+[CSC 591 - Ping Pong Lab](http://github.com/losmescaleros/ping-pong 
+"GitHub Project")
 
 # Ping Pong Lab
 
