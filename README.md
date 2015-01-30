@@ -11,8 +11,8 @@ Socket.IO and Node.js.
 
 ## Dependencies
 
-This application requires [node][Node.js], [socket.io][Socket.IO],
-[express][Express.js], [jade][Jade], [jQuery][jQuery], and [bootstrap]
+This application requires [Node.js][node], [Socket.IO][socket io],
+[Express.js][express], [Jade][jade], [jQuery][jquery], and [Bootstrap]
 [Bootstrap]. While the Node.js portions of these dependencies are addressed in
 the ```packages.json``` file, Bootstrap and jQuery dependencies are expected
 to be in ```public``` folder. ```jquery.min.js```, ```bootstrap.min.js```, 
@@ -47,9 +47,9 @@ server, to which the server will respond with a PONG. Once the client receives
 the response, it will print it to the web console. 
 
 
-[Bootstrap]: http://getbootstrap.com	"Bootstrap"
-[jQuery]: http://jquery.com	 	"jQuery"
+[bootstrap]: http://getbootstrap.com	"Bootstrap"
+[jquery]: http://jquery.com	 	"jQuery"
 [node]: http://nodejs.org		"Node.js"
 [express]: http://expressjs.com		"Express.js"
 [jade]: http://jade-lang.com		"Jade"
-[socket.io]: http://socket.io		"Socket.io"
+[socket io]: http://socket.io		"Socket.io"
