@@ -7,7 +7,7 @@ CSC 591
 ## Introduction
 
 The goal of this application is to explore bi-directional communication using
-Socket.IO and Node.js. 
+Socket.IO and Node.js.  
 
 ## Dependencies
 
@@ -19,6 +19,15 @@ to be in ```public``` folder. ```jquery.min.js```, ```bootstrap.min.js```,
 ```bootstrap-theme.min.js``` are expected to be in ```public/javascripts/```. 
 CSS dependencies, including ```bootstrap.min.css``` and 
 ```bootstrap-theme.min.css``` are expected to be in ```public/stylesheets```.
+
+## Source File Structure
+
+The file structure for this project was created using the Express.js web
+framework. The code for the server is located in ```app.js```. Jade template
+files for the HTML front-end are located in the ```views``` folder. JavaScript
+front-end files are located in ```public/javascripts```, while CSS files are
+located in ```public/views```. The ```routes``` is largely unused by this
+project, but it describes how HTTP routing is done. 
 
 ## Running the Application
 
