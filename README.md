@@ -24,11 +24,12 @@ CSS dependencies, including ```bootstrap.min.css``` and
 ## Source File Structure
 
 The file structure for this project was created using the Express.js web
-framework. The code for the server is located in ```app.js```. Jade template
-files for the HTML front-end are located in the ```views``` folder. JavaScript
-front-end files are located in ```public/javascripts```, while CSS files are
-located in ```public/views```. The ```routes``` is largely unused by this
-project, but it describes how HTTP routing is done. 
+framework. The code for the server is located in ```app.js```, while 
+client-side JavaScript code is located in ```client.socket.io.js```.Jade 
+template files for the HTML front-end are located in the ```views``` folder. 
+JavaScript front-end files are located in ```public/javascripts```, while CSS 
+files are located in ```public/views```. The ```routes``` is largely unused 
+by this project, but it describes how HTTP routing is done. 
 
 ## Running the Application
 
